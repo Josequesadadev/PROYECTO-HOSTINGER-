@@ -9,6 +9,7 @@
 
 :root{
     --neutral-600: #1d1e20;
+    --primary--0: #ffffff;
     --primary--100: #e2dbfc;
     --primary--200: #c5b8f8;
     --primary--300: #b39ef3;
@@ -18,6 +19,7 @@
     --primary--700: #45209d;
     --primary--800: #2f1c6a;
     --primary--900: #261559;
+    --primary--1000: #1f1346;
 }
 
 /* HEADER CSS */
@@ -167,7 +169,64 @@ header{
     min-height: 48px;
 }
 
-/* CLASES PARA TEXTOS/CENTRADOS/MARGINS/ETC*/
+/* MIGRATION CSS */
+
+.Web-migration{
+    background-color: var(--primary--1000);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+}
+
+.Migration-content{
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    align-items: center;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px;
+    gap: 24px;
+    width: 100%;
+}
+
+.content-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 32px;
+    background-color: #301c6b;
+    flex: 1;
+}
+
+.content-card__img img{
+    width: 40px;
+    height: 40px;
+}
+
+.content-card__subtitle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-secondary{
+    background-color: var(--primary--500);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--primary--0);
+    border: 2px solid var(--primary--500);
+    border-radius: 8px;
+    padding: 12px 48px;
+    text-decoration: none;
+}
+
+
+/* CLASES PARA TEXTOS/CENTRADOS/ETC*/
 
 .title-big{
     font-size: 38px;
@@ -190,6 +249,13 @@ header{
     font-weight: 400;
 }
 
+.title-medium-m{
+    color: var(--primary--0);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
 .title-huge{
     font-size: 48px;
     color: var(--primary--800);
@@ -204,6 +270,18 @@ header{
     display: flex;
     gap: 10px;
     margin-bottom: 2px;
+}
+
+.text-medium-m{
+    font-size: 16px;
+    color: var(--primary--0);
+    font-weight: 400;
+}
+
+.text-subtitle-m{
+    font-size: 18px;
+    color: var(--primary--0);
+    font-weight: 700;
 }
 
 .text-hero-margin{
@@ -227,6 +305,8 @@ header{
     height: 24px;
 }
 
+/* MARGINS */
+
 .Margin-b1{
     margin-bottom: 6px;
 }
@@ -241,4 +321,8 @@ header{
 
 .Margin-b4{
     margin-bottom: 36px;
+}
+
+.mt-3{
+    margin-top: 32px;
 }
